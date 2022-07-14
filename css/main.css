@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 @font-face {
@@ -43,6 +51,8 @@ body{
 
 section{
     padding: 215px 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#CFDDE8), to(#6591B8));
+    background: -o-linear-gradient(top, #CFDDE8 0%, #6591B8 100%);
     background: linear-gradient(180deg, #CFDDE8 0%, #6591B8 100%);
 }
 
@@ -54,9 +64,15 @@ section{
 }
 
 .section-top-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 550px;
     padding: 35px 32px;
     background-color: #6A96D8;
@@ -91,8 +107,12 @@ section{
     padding-bottom: 32px;
 }
 .today {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -154,7 +174,9 @@ section{
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
     content: "";
 }
 
@@ -170,7 +192,9 @@ section{
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
-    transform: translate(+50%);
+    -webkit-transform: translate(+50%);
+        -ms-transform: translate(+50%);
+            transform: translate(+50%);
     content: "";
 }
 
@@ -192,7 +216,9 @@ section{
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
     content: "";
 }
 
@@ -205,8 +231,12 @@ section{
 
 .site-form {
     width: 486px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-top: 1px solid #D9D9D9;
     margin-top: 10px;
 }
