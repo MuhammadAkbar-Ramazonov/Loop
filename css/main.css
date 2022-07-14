@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/inter-v12-latin-500.woff2') format('woff2'), 
+    url('../fonts/inter-v12-latin-500.woff') format('woff'); 
+}    
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: 
+    url('../fonts/inter-v12-latin-600.woff2') format('woff2'), 
+    url('../fonts/inter-v12-latin-600.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+    url('../fonts/inter-v12-latin-700.woff2') format('woff2'), 
+    url('../fonts/inter-v12-latin-700.woff') format('woff');
+}
+
+body{
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    
+}
+
+.container{
+    width: 550px;
+    margin: 0 auto;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+section{
+    padding: 215px 0;
+    background: linear-gradient(180deg, #CFDDE8 0%, #6591B8 100%);
+}
+
+.site-loop{
+    width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+
+.section-top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    padding: 35px 32px;
+    background-color: #6A96D8;
+}
+
+.site-oval{
+    color: #fff;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.site-button{
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background-color: transparent;
+    background-image: url("../images/close.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    
+}
+
+.inner-wrapper {
+    padding-top: 29px;
+    padding-bottom: 32px;
+}
+.today {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #D9D9D9;
+    opacity: 0.6;
+}
+
+.today::before{
+    display: inline-block;
+    width: 207px;
+    height: 1px;
+    background-image: url("../images/Rectangle\ 4.png");
+    background-size: 207px 1px;
+    content: "";
+}
+.today::after{
+    display: inline-block;
+    width: 207px;
+    height: 1px;
+    background-image: url("../images/Rectangle\ 4.png");
+    background-size: 207px 1px;
+    content: "";
+}
+
+
+.inner-wrapper-time {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #00000099;
+    opacity: 0.4;
+}
+.inner-wrapper-text {
+    position: relative;
+    display: block;
+    width: 372px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 40px;
+    padding: 10px 16px;
+    background-color: #E6EDF6;
+    border-radius: 4px;
+}
+
+.first-text::before{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-top: 10px solid #E6EDF6;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    transform: translate(-50%);
+    content: "";
+}
+
+.second-time{
+    text-align: end;
+}
+
+.second-text::after{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border-top: 10px solid #F2F2F2;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    transform: translate(+50%);
+    content: "";
+}
+
+.second-text{
+    margin-right: 0;
+    margin-left: auto;
+    background-color: #F2F2F2;
+}
+
+.but-mark{
+    width: 116px;
+}
+
+.but-mark::before{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border-top: 10px solid #E6EDF6;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    transform: translate(-50%);
+    content: "";
+}
+
+.you-blocked{
+    
+    width: 245px;
+    margin-left: auto;
+    background-color: #FFC2C1;
+}
+
+.site-form {
+    width: 486px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #D9D9D9;
+    margin-top: 10px;
+}
+
+.site-form-name {
+    width: 431px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #00000099;
+    padding: 21px 0;
+    border: 0;
+    background-color: #FFFFFF;
+}
+.site-form-button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    color: #6A96D8;
+    border: 0;
+    background-color: transparent;
+}
